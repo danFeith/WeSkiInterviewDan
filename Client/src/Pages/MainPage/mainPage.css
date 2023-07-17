@@ -1,0 +1,94 @@
+.main-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    background-color: #F6F9FE;
+    height: max-content;
+}
+
+.main-page .top-bar {
+    height: 92px;
+    width: 100%;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+
+.main-page .top-bar .logo {
+    /* flex-grow: 1; */
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    /* justify-content: left; */
+}
+
+.main-page .top-bar .search-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 320px;
+    display: flex;
+    justify-content: left;
+
+}
+
+.search-container .search-button {
+    display: flex;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid var(--blue-400, #1F5CF1);
+    color: Blue;
+}
+
+.main-page .hotel-list {
+    display: flex;
+    flex-direction: column;
+    width: 900px;
+    height: 908px;
+    padding-top: 10px;
+}
+
+
+.selection-container {
+    width: 100%;
+    display: flex;
+}
+
+.selection-container .blank-space {
+    width: 295px;
+}
+
+.selection-container .detenation-selection-list {
+    width: 290px;
+    height: 300px;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    background-color: white;
+}
+
+.detenation-selection-list .item{
+    height: 50px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.detenation-selection-list .item:hover{
+    background-color: #C2C8D6;
+}
+
+.blank-space-for-group-size{
+    width: 310px;
+}

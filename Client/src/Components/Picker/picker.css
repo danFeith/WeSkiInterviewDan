@@ -1,0 +1,29 @@
+.main-page .top-bar .picker-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 320px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main-page .top-bar .picker-container .picker {
+    height: 44px;
+    width: 290px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--neutral-700, #C2C8D6);
+    color: var(--neutral-300, #525D7A);
+    /* OLD/Body/300 */
+    font-family: Objektiv Mk2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%;
+    cursor: pointer;
+    /* 23.2px */
+}

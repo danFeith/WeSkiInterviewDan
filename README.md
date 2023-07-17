@@ -1,3 +1,4 @@
 # WeSkiInterviewDan
-
-npm start on both client and server :)
+npm install and then npm start
+for the client and for the server 
+:)

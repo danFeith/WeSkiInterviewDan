@@ -12,7 +12,7 @@ import cookieParser from  "cookie-parser";
 import WebSocketHandler from './websocket' 
 
 dotenv.config({ path: path.resolve(__dirname, `../.env.${process.env.NODE_ENV}`) || `../.env.development` });
-const port = process.env.PORT;
+const port = 4040//process.env.PORT;
 
 const app: Express = express();
 app.use(cookieParser())

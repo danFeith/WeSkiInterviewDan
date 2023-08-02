@@ -30,6 +30,7 @@ function MainPage() {
         }
 
         if (val.type == "hotels_list") {
+            console.log(val.content)
             setHotels([...hotels, ...val.content].sort((hotelA, hotelB) => { return hotelA.price - hotelB.price }))
             setResultDestination(selectedDestination)
         }
@@ -75,7 +76,7 @@ function MainPage() {
             </div>
             <div className='selection-container'>
                 <div className='blank-space'></div>
-                {(isGroupSizeOpen) ? <div className='blank-space-for-group-size'></div> : null}
+                {(isGroupSizeOpen && !isDestinationsListOpen) ? <div className='blank-space-for-group-size'></div> : null}
                 {(isDestinationsListOpen) ? <div className='detenation-selection-list'>
                     {Destinations.map((dest) => {
                         return <div className='item' onClick={() => { setSelectedDestination(dest.id); setIsDestinationListOpen(false) }}> {dest.name}</div>

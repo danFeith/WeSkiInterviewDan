@@ -1,6 +1,6 @@
 import {WebSocket, Server} from 'ws';
 import { v4 as uuidv4 } from 'uuid';
-import { HotelCommonSchema, WSMessageFormat, WebSocketTriggerEvent } from './types';
+import { WSMessageFormat, WebSocketTriggerEvent } from './types';
 import eventEmitter, { RECIEVED_HOTELS_LIST_EVENT } from './EventEmmiter';
 
 
@@ -28,6 +28,9 @@ class WebSocketHandler {
             socket.on('close', () => {
                 delete this.connectedClients[userId]
             })
+            Object.keys(this.connectedClients).forEach(conn => {
+                console.log(conn, socket.readyState)
+            });
 
             this.registerToTriggerEvents()
 
